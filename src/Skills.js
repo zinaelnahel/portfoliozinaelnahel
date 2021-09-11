@@ -25,7 +25,7 @@ function Skills() {
             variant="h6"
             style={{ color: "#6F69AC", textAlign: "center" }}
           >
-            👩🏻‍💻 Front-End
+            💻 Front-End
             <ul
               style={{
                 listStyleType: "none",
@@ -46,7 +46,7 @@ function Skills() {
             variant="h6"
             style={{ color: "#6F69AC", textAlign: "center" }}
           >
-            💻 Back-End
+            👩🏻‍💻 Back-End
             <ul
               style={{
                 listStyleType: "none",
