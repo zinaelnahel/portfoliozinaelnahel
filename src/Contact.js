@@ -39,7 +39,7 @@ function Contact() {
                 <img
                   src={linkedin}
                   alt={linkedin}
-                  style={{ height: "20px", marginRight: "10px" }}
+                  style={{ height: "15px", marginRight: "10px" }}
                 />
                 <a
                   href="https://www.linkedin.com/in/zina-el-nahel/"
@@ -54,7 +54,7 @@ function Contact() {
                 <img
                   src={github}
                   alt={github}
-                  style={{ height: "20px", marginRight: "10px" }}
+                  style={{ height: "15px", marginRight: "10px" }}
                 />
                 <a
                   href="https://github.com/zinaelnahel"
@@ -71,7 +71,7 @@ function Contact() {
                   href="mailto:zinamahmoud1989@gmail.com"
                   target="_blank"
                   rel="noreferrer"
-                  style={{ marginLeft: "10px" }}
+                  style={{ marginLeft: "8px" }}
                 >
                   Email{" "}
                 </a>
