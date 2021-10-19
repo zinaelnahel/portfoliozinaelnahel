@@ -59,7 +59,7 @@ export default function Nav() {
           onChange={handleChange}
           aria-label="simple tabs example"
         >
-          <Tab label="Portfolio" {...a11yProps(0)} />
+          <Tab label="Portfolio" {...a11yProps(0)} disabled />
           <Tab label="Skills" {...a11yProps(1)} />
           <Tab label="Projects" {...a11yProps(2)} />
           <Tab label="Contact Me" {...a11yProps(3)} />
