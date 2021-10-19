@@ -45,6 +45,7 @@ function Contact() {
                   href="https://www.linkedin.com/in/zina-el-nahel/"
                   target="_blank"
                   rel="noreferrer"
+                  style={{ color: "#6F69AC" }}
                 >
                   Linkedin
                 </a>
@@ -60,6 +61,7 @@ function Contact() {
                   href="https://github.com/zinaelnahel"
                   target="_blank"
                   rel="noreferrer"
+                  style={{ color: "#6F69AC" }}
                 >
                   GitHub
                 </a>
@@ -71,7 +73,7 @@ function Contact() {
                   href="mailto:zinamahmoud1989@gmail.com"
                   target="_blank"
                   rel="noreferrer"
-                  style={{ marginLeft: "8px" }}
+                  style={{ marginLeft: "8px", color: "#6F69AC" }}
                 >
                   Email{" "}
                 </a>

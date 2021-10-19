@@ -59,18 +59,21 @@ export default function Nav() {
           onChange={handleChange}
           aria-label="simple tabs example"
         >
-          <Tab label="Skills" {...a11yProps(0)} />
-          <Tab label="Projects" {...a11yProps(1)} />
-          <Tab label="Contact Me" {...a11yProps(2)} />
+          <Tab label="Portfolio" {...a11yProps(0)} />
+          <Tab label="Skills" {...a11yProps(1)} />
+          <Tab label="Projects" {...a11yProps(2)} />
+          <Tab label="Contact Me" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
+
+      <TabPanel value={value} index={0}></TabPanel>
+      <TabPanel value={value} index={1}>
         <Skills />
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={2}>
         <Projects />
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={3}>
         <Contact />
       </TabPanel>
     </div>

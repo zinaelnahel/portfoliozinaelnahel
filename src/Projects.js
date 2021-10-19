@@ -14,6 +14,9 @@ import cooking from "./img/cooking.png";
 import hackernews from "./img/hackernews.png";
 import weather from "./img/weather.png";
 import takenote from "./img/takenote.png";
+import tajam from "./img/tajam.png";
+import musicinstruments from "./img/musicinstruments.png";
+import bouquet from "./img/bouquet.png";
 const useStyles = makeStyles({
   root: {
     maxWidth: 600,
@@ -122,22 +125,21 @@ export default function Projects() {
                 component="img"
                 alt="Project"
                 height="400"
-                image={cooking}
+                image={bouquet}
                 title="Project"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Cooking Blog
+                  Bouquet Café
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  "Cooking with friends Blog" is written in Javascript , HTML
-                  and CSS
+                  The Website is written in Javascript , HTML and Bootstrap
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               <Button
-                href="https://tuttiamore.github.io/cookbook-zfc/index.html"
+                href="https://bouquet.netlify.app/"
                 size="small"
                 color="primary"
                 target="_blank"
@@ -240,6 +242,116 @@ export default function Projects() {
             <CardActions>
               <Button
                 href="https://adoring-montalcini-5db999.netlify.app/"
+                size="small"
+                color="primary"
+                target="_blank"
+              >
+                Go to Website
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item md={4}>
+          <Card
+            className={classes.root}
+            style={{ marginTop: "40px", margin: "40px" }}
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Project"
+                height="400"
+                image={tajam}
+                title="Project"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Tajam
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Website is replicated from an original Website in HTML, CSS
+                  and Javascript
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                href="https://gallant-kepler-937e2f.netlify.app/"
+                target="_blank"
+                size="small"
+                color="primary"
+              >
+                Go to Website
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item md={4}>
+          <Card
+            className={classes.root}
+            style={{
+              marginTop: "40px",
+              margin: "40px",
+            }}
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Project"
+                height="400"
+                image={musicinstruments}
+                title="Project"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Museum of Instruments
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A website written in HTML , Javascript, CSS and Bootstrap
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                href="https://orientalinstruments.netlify.app/"
+                size="small"
+                color="primary"
+                target="_blank"
+              >
+                Go to Website
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item md={4}>
+          <Card
+            className={classes.root}
+            style={{ marginTop: "40px", margin: "40px" }}
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Project"
+                height="400"
+                image={cooking}
+                title="Project"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Cooking Blog
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  "Cooking with friends Blog" is written in Javascript , HTML
+                  and CSS
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                href="https://tuttiamore.github.io/cookbook-zfc/index.html"
                 size="small"
                 color="primary"
                 target="_blank"

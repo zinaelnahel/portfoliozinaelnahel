@@ -20,7 +20,7 @@ function Skills() {
     <header className="App-header">
       <h6 style={{ marginTop: "0" }}>My skills set includes : </h6>
       <div className={classes.root}>
-        <Paper style={{ backgroundColor: "#95DAC1" }}>
+        <Paper style={{ backgroundColor: "#95DAC1", marginLeft: "90px" }}>
           <Typography
             variant="h6"
             style={{ color: "#6F69AC", textAlign: "center" }}
@@ -40,7 +40,7 @@ function Skills() {
             </ul>
           </Typography>
         </Paper>
-        <Paper style={{ backgroundColor: "#95DAC1" }}>
+        <Paper style={{ backgroundColor: "#95DAC1", marginLeft: "90px" }}>
           {" "}
           <Typography
             variant="h6"
