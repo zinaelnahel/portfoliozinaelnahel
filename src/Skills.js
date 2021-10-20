@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     "& > *": {
       margin: theme.spacing(2),
-      width: theme.spacing(33),
+      width: theme.spacing(30),
       height: theme.spacing(20),
     },
   },
@@ -20,7 +20,7 @@ function Skills() {
     <header className="App-header">
       <h6 style={{ marginTop: "0" }}>My skills set includes : </h6>
       <div className={classes.root}>
-        <Paper style={{ backgroundColor: "#95DAC1", marginLeft: "90px" }}>
+        <Paper style={{ backgroundColor: "#95DAC1", marginLeft: "70px" }}>
           <Typography
             variant="h6"
             style={{ color: "#6F69AC", textAlign: "center" }}
@@ -40,7 +40,7 @@ function Skills() {
             </ul>
           </Typography>
         </Paper>
-        <Paper style={{ backgroundColor: "#95DAC1", marginLeft: "90px" }}>
+        <Paper style={{ backgroundColor: "#95DAC1", marginLeft: "70px" }}>
           {" "}
           <Typography
             variant="h6"
