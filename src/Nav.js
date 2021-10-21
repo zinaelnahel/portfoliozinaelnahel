@@ -62,7 +62,7 @@ export default function Nav() {
           <Tab label="Portfolio" {...a11yProps(0)} disabled />
           <Tab label="Skills" {...a11yProps(1)} />
           <Tab label="Projects" {...a11yProps(2)} />
-          <Tab label="Contact Me" {...a11yProps(3)} />
+          <Tab label="Contact" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
 
