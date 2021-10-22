@@ -17,6 +17,7 @@ import takenote from "./img/takenote.png";
 import tajam from "./img/tajam.png";
 import musicinstruments from "./img/musicinstruments.png";
 import bouquet from "./img/bouquet.png";
+import hosnshah from "./img/hosnshah.png";
 const useStyles = makeStyles({
   root: {
     maxWidth: 600,
@@ -352,6 +353,43 @@ export default function Projects() {
             <CardActions>
               <Button
                 href="https://tuttiamore.github.io/cookbook-zfc/index.html"
+                size="small"
+                color="primary"
+                target="_blank"
+              >
+                Go to Website
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item md={4}>
+          <Card
+            className={classes.root}
+            style={{
+              marginTop: "40px",
+              margin: "40px",
+            }}
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Project"
+                height="400"
+                image={hosnshah}
+                title="Project"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Portfolio Website
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  A website written in HTML , Javascript, CSS and Bootstrap
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                href="https://hosnshah.netlify.app/"
                 size="small"
                 color="primary"
                 target="_blank"
