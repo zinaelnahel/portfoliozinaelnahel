@@ -20,7 +20,7 @@ function Hello() {
         className="profile"
         src={profile}
         alt="zina-foto"
-        style={{ borderRadius: "350px", height: "120px", marginTop: "40px" }}
+        style={{ borderRadius: "20px", height: "170px", marginTop: "40px" }}
       />
 
       <h5>{text}</h5>

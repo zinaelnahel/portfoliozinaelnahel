@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   max-height: 100vh !important;
+  background-color: #fff5de;
+}
+.body {
+  background-color: #fff5de;
 }
 
 @media (prefers-reduced-motion: no-preference) {
