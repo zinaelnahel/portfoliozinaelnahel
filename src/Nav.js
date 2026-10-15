@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import "./App.css";
 import Projects from "./Projects";
@@ -11,7 +10,7 @@ import Skills from "./Skills";
 
 import Contact from "./Contact";
 export default function Nav() {
-  const [value, setValue] = React.useState();
+  const [value, setValue] = React.useState(2);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -30,7 +29,7 @@ export default function Nav() {
       >
         {value === index && (
           <Box p={0}>
-            <Typography>{children}</Typography>
+            {children}
           </Box>
         )}
       </div>
@@ -54,10 +53,12 @@ export default function Nav() {
     <div>
       <AppBar>
         <Tabs
-          indicatorColor="white"
+          indicatorColor="secondary"
+          variant="scrollable"
+          scrollButtons="auto"
           value={value}
           onChange={handleChange}
-          aria-label="simple tabs example"
+          aria-label="Portfolio navigation"
         >
           <Tab label="Portfolio" {...a11yProps(0)} disabled />
           <Tab label="Skills" {...a11yProps(1)} />

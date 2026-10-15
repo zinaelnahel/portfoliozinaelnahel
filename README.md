@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Zina El Nahel — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React portfolio with projects, skills, and contact details. The project gallery
+opens by default and includes recent AI work alongside earlier web applications.
 
-## Available Scripts
+## Featured projects
 
-In the project directory, you can run:
+- **SafarAI:** a conversational travel planner with a stateless FastAPI backend,
+  weather and currency tools, itinerary budgets, and optional destination images.
+- **Automated Customer Reviews:** sentiment classification, semantic product
+  clustering, and evidence-based review article drafts, with a Streamlit demo.
+- Ten earlier web projects, including PokeFight, Rocket Coder, and Ra Weather App.
 
-### `npm start`
+Project titles, descriptions, images, and links live in `src/Projects.js`.
+Only add a demo URL when its public address is confirmed; otherwise use a source
+code link. Existing demo links are retained from the original portfolio.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Run locally
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Use Node.js 22:
 
-### `npm test`
+```sh
+npm ci
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Open http://localhost:3000. To build and test:
 
-### `npm run build`
+```sh
+npm run build
+npm test -- --watchAll=false --runInBand
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The build script enables the OpenSSL compatibility option needed by this
+project's existing Create React App 4 / webpack 4 tooling on Node.js 22.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deploy on Vercel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Import `zinaelnahel/portfoliozinaelnahel` as a new Vercel project. Use the
+repository root (`./`); `vercel.json` selects Create React App, `npm run build`,
+and the `build` output directory. No API keys or environment variables are
+needed for this static portfolio. Keep Node.js set to 22.x.
 
-### `npm run eject`
+After connecting the repository, pushes to `main` trigger production deployments.
+Add the public production URL here once the deployment is confirmed.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Files
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `src/Projects.js`: project data and responsive cards.
+- `src/Nav.js`: Projects, Skills, and Contact tabs.
+- `src/Hello.js`: introduction and profile image.
+- `src/App.test.js`: project visibility, source links, and tab navigation tests.
+- `public/index.html`: page title and social metadata.
+- `vercel.json`: hosting configuration.

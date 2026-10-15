@@ -6,10 +6,8 @@ import profile from "./img/profilepic.jpeg";
 function Hello() {
   const text = useTypewriter({
     words: [
-      "< Hello World ! I am Zina El Nahel, a Fullstack Web Developer />  ",
+      "< Hello World ! I am Zina El Nahel, a Fullstack Developer exploring AI Engineering />  ",
     ],
-
-    // Infinit
   });
 
   return (
