@@ -21,18 +21,10 @@ export const experience = [
 ];
 
 export const education = [
-  {title: 'AI Engineering Bootcamp', institution: 'Ironhack · Remote · In progress', date: '31 Aug – 13 Nov 2026'},
+  {title: 'AI Engineering Bootcamp', institution: 'Ironhack · Remote', date: '31 Aug – 13 Nov 2026'},
   {title: 'Full-Stack Web Development', institution: 'WBS Coding School, FrauenLoop & SheCodes', date: '2021'},
   {title: 'Master in Public Policy & Good Governance', institution: 'Hochschule Osnabrück', date: '2015–2017'},
   {title: 'BSc Pharmacy & Biotechnology', institution: 'German University in Cairo', date: '2007–2012'},
 ];
 
 export const languages = [['Arabic', 'Native'], ['German', 'C2'], ['English', 'C2'], ['Spanish', 'B2'], ['French', 'B1'], ['Italian', 'A1']];
-
-export const bootcampPractice = [
-  {title: 'Data & machine learning', items: ['Python & OOP', 'NumPy', 'pandas', 'Data preparation', 'scikit-learn', 'Supervised learning', 'Clustering', 'Model evaluation']},
-  {title: 'Language & LLMs', items: ['NLP', 'Sentiment analysis', 'Hugging Face Transformers', 'Fine-tuning', 'Prompt engineering', 'OpenAI', 'Tool calling']},
-  {title: 'Building AI applications', items: ['Conversational AI', 'FastAPI', 'API deployment', 'Model comparison', 'Token & cost tracking', 'Prompt-injection mitigations']},
-];
-
-export const bootcampCurriculum = ['Neural networks', 'TensorFlow & PyTorch', 'RAG', 'LangChain & LLM agents', 'MLflow & MLOps', 'Cloud AI engineering (AWS / Google Cloud)', 'AI ethics, bias, fairness & privacy'];

@@ -68,12 +68,13 @@ test('skip link moves keyboard focus to main content', () => {
   expect(document.activeElement).toBe(screen.getByRole('main'));
 });
 
-test('shows the bootcamp dates and separates practice from the wider syllabus', () => {
+test('shows the bootcamp dates and core skills with a link to projects', () => {
   render(<App />);
   expect(screen.getByRole('heading', {name: 'AI Engineering at Ironhack'})).toBeInTheDocument();
   expect(screen.getByText('31 August 2026')).toHaveAttribute('datetime', '2026-08-31');
   expect(screen.getByText('13 November 2026')).toHaveAttribute('datetime', '2026-11-13');
-  expect(screen.getByRole('heading', {name: 'Data & machine learning'})).toBeInTheDocument();
-  expect(screen.getByRole('heading', {name: 'Also on my learning path'})).toBeInTheDocument();
-  expect(screen.getByText('RAG')).toBeInTheDocument();
+  const bootcamp = screen.getByRole('article', {name: 'AI Engineering at Ironhack'});
+  expect(within(bootcamp).getByRole('list', {name: 'Core AI skills'})).toBeInTheDocument();
+  expect(within(bootcamp).getByText('Model evaluation')).toBeInTheDocument();
+  expect(within(bootcamp).getByRole('link')).toHaveAttribute('href', '#work');
 });

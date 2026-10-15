@@ -20,9 +20,9 @@ gallery or filter by AI engineering and web development. The unavailable Bouquet
 demo was replaced with the verified Heschek Beschek repository; the Hosn Shah
 entry now correctly describes the Arabic-learning website it links to.
 
-Profile details, skills, experience, education, and bootcamp topics live in
-`src/data/profile.js`. The syllabus is a source for coursework topics; the
-portfolio distinguishes project practice from the wider curriculum. The CV PDF
+Profile details, skills, experience, education, and languages live in
+`src/data/profile.js`. The compact Ironhack section highlights core project skills.
+Recent tech roles are visible; earlier roles and degrees are expandable. The CV PDF
 and private phone number are not included in the site.
 
 ## Run locally

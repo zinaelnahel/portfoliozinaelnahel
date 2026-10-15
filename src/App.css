@@ -60,10 +60,7 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; }
 .portrait figcaption .status-dot { width: 5px; height: 5px; }
 .portrait-outline { position: absolute; inset: -15px -8px 0 22px; border: 1px solid #d4dcc8; border-radius: 160px 160px 12px 12px; transform: rotate(6deg); }
 .portrait-plus { position: absolute; right: -21px; top: 5px; color: #6e8454; font-weight: 200; font-size: 48px; line-height: 1; transform: rotate(12deg); }
-.portrait-badge { position: absolute; bottom: -11px; left: -38px; display: flex; align-items: center; gap: 11px; border: 1px solid #e5e8df; background: #fffefa; border-radius: 7px; padding: 13px 19px 13px 13px; box-shadow: 0 12px 35px #35492f0a; transform: rotate(-3deg); }
 .badge-icon { background: #e8efdc; color: #5e7347; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; }
-.portrait-badge strong { display: block; font-size: 12px; font-weight: 600; }
-.portrait-badge div > span { display: block; font-size: 9px; color: #767d70; margin-top: 2px; }
 .practice-strip { border-block: 1px solid var(--line); background: #f1f3ed; }
 .practice-strip > div { min-height: 79px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
 .practice-strip span { max-width: 120px; font-size: 8px; line-height: 1.9; letter-spacing: 1.5px; color: #747d6b; }
@@ -244,9 +241,6 @@ h2 { font-family: var(--serif); font-size: clamp(32px, 3.4vw, 46px); letter-spac
   .hero-intro { font-size: 14px; }
   .hero-description { font-size: 12px; }
   .portrait img { height: 275px; }
-  .portrait-badge { left: -22px; padding: 10px; gap: 8px; }
-  .portrait-badge strong { font-size: 10px; }
-  .portrait-badge div > span { font-size: 8px; }
   .portrait figcaption { font-size: 7px; }
   .portrait-plus { right: -12px; }
   .badge-icon { width: 32px; height: 32px; }
@@ -311,9 +305,6 @@ h2 { font-family: var(--serif); font-size: clamp(32px, 3.4vw, 46px); letter-spac
   .portrait-composition { max-width: 275px; margin: 0 auto; }
   .portrait img { height: 265px; }
   .portrait-outline { inset: -10px -7px 0 14px; }
-  .portrait-badge { bottom: -6px; left: -22px; transform: rotate(-3deg); padding: 10px 14px 10px 10px; }
-  .portrait-badge strong { font-size: 11px; }
-  .portrait-badge div > span { font-size: 8px; }
   .portrait figcaption { font-size: 8px; }
   .practice-strip i { font-size: 9px; }
   .practice-strip p { font-size: 9px; }
@@ -437,8 +428,6 @@ body { background: var(--paper); }
 .portrait figcaption { font-family: 'Caveat', 'Segoe Print', cursive; background: #fffefd; color: #8b6d64; font-size: 25px; letter-spacing: .3px; padding: 10px 0 1px; }
 .portrait-outline { inset: 10px -3px 18px 10px; border: 1px dashed #cda88e; border-radius: 3px; transform: rotate(-5deg); }
 .portrait-plus { right: -21px; top: -28px; font-size: 24px; color: #9e7a6c; line-height: 1.1; transform: rotate(6deg); }
-.portrait-badge { bottom: -9px; left: -35px; display: block; background: #e8edc9; border: 0; border-radius: 2px 7px 5px 3px; padding: 12px 20px; font-size: 23px; line-height: 1.05; color: #6b7449; transform: rotate(-9deg); box-shadow: 1px 5px 10px #5e633510; }
-.portrait-badge svg { display: block; width: 46px; height: 25px; fill: none; stroke: #788053; stroke-width: 1.3; position: absolute; right: -32px; bottom: -9px; transform: rotate(12deg); }
 .practice-strip { background: #f5eddf; border-block: 1px dashed #ddcdbb; transform: rotate(-.35deg); }
 .practice-strip > div { min-height: 81px; gap: 28px; }
 .practice-strip span { font-family: 'DM Sans', 'Segoe UI', sans-serif; color: #9d8773; }
@@ -551,7 +540,6 @@ h2 { font-size: clamp(35px,3.3vw,47px); font-weight: 400; color: #543e4c; }
   .hero-intro { font-size: 15px; }
   .hero-description { font-size: 13px; }
   .portrait img { height: 230px; }
-  .portrait-badge { font-size: 20px; padding: 10px 15px; left: -15px; }
   .portrait-plus { font-size: 22px; right: -5px; top: -20px; }
   .portrait figcaption { font-size: 23px; }
   .practice-strip p { font-size: 20px; }
@@ -578,7 +566,6 @@ h2 { font-size: clamp(35px,3.3vw,47px); font-weight: 400; color: #543e4c; }
   .portrait img { height: 245px; }
   .portrait figcaption { font-size: 25px; padding-block: 8px 1px; }
   .portrait-plus { top: -22px; right: -11px; font-size: 23px; }
-  .portrait-badge { font-size: 22px; left: -8px; bottom: -10px; }
   .portrait-outline { inset: 10px 0 20px 10px; transform: rotate(-4deg); }
   .practice-strip { transform: none; }
   .practice-strip span { font-size: 7px; }
@@ -658,7 +645,6 @@ h2 { font-size: clamp(35px,3.3vw,47px); font-weight: 400; color: #543e4c; }
 .button-light { color: #935537; }
 .footer-name span { color: #866a55; }
 .site-footer > p { color: #876a53; }
-.portrait-badge { color: #5a623b; }
 .review-sentiments span { color: #536d47; }
 .review-sentiments span:nth-child(2) { color: #736443; }
 .review-sentiments span:nth-child(3) { color: #805b5b; }
@@ -690,21 +676,13 @@ body { overflow-wrap: break-word; }
 .bootcamp-note { margin-top: 45px; padding: 30px; background: #f5eedb; border: 1px dashed #d7c7a2; border-radius: 4px 8px 5px 6px; position: relative; }
 .bootcamp-note::before { content: ''; position: absolute; width: 78px; height: 22px; left: 45%; top: -12px; background: #e3d5af99; transform: rotate(-6deg); }
 .bootcamp-heading { display: flex; justify-content: space-between; gap: 25px; align-items: center; }
-.bootcamp-heading .handwritten { color: #80613f; font-size: 25px; margin-bottom: 5px; }
 .bootcamp-heading h3 { font-family: var(--serif); color: #71543e; font-size: 25px; font-weight: 400; }
 .bootcamp-dates { margin-top: 12px; color: #7d674d; font-size: 11px; line-height: 1.9; }
 .bootcamp-dates span { display: inline-block; margin-left: 12px; padding: 2px 7px; font-size: 9px; border: 1px solid #c6b899; border-radius: 3px; color: #725d3f; }
 .bootcamp-description { margin-top: 20px; color: #7d674d; font-size: 13px; max-width: 780px; line-height: 1.9; }
-.bootcamp-skills { margin-top: 24px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 25px; }
-.bootcamp-skills section { min-width: 0; }
-.bootcamp-note h4 { font-size: 13px; font-weight: 500; color: #705a40; margin: 0 0 12px; }
 .bootcamp-note .skill-tags li { color: #755b3d; background: #fff8e6; border: 1px solid #e5d8b8; }
-.syllabus-note { border-top: 1px dashed #d3c4a1; margin-top: 25px; padding-top: 20px; }
-.syllabus-note h4 { margin-bottom: 6px; }
-.syllabus-note > p { font-size: 11px; color: #7d674d; margin-bottom: 14px; line-height: 1.9; }
 @media (max-width: 800px) {
   .bootcamp-heading { align-items: flex-start; flex-direction: column; gap: 15px; }
-  .bootcamp-skills { grid-template-columns: 1fr; gap: 22px; }
 }
 @media (max-width: 580px) {
   .bootcamp-note { padding: 25px 20px; }
@@ -716,3 +694,29 @@ body { overflow-wrap: break-word; }
 
 .hero-linkedin { margin-top: 18px; min-height: 32px; font-size: 12px; }
 
+
+.project-evidence { margin: 16px 0; font-size: 12px; line-height: 1.75; color: #79636a; }
+.project-evidence dt { font-weight: 600; color: #614958; margin-top: 10px; }
+.project-evidence dd { margin: 3px 0 0; }
+.contact-direct { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 26px; font-size: 14px; }
+.contact-direct a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+
+.earlier-career { margin: 30px 0 0 32px; border-block: 1px dashed #d0bca6; }
+.earlier-career summary { cursor: pointer; padding: 18px 0; color: #745c62; font-size: 16px; }
+.earlier-career summary span { display: block; font-size: 11px; color: #7d6355; margin-top: 4px; }
+.earlier-career summary:focus-visible { outline: 3px solid #80526d; outline-offset: 5px; }
+.earlier-career-content { padding: 10px 0 24px; }
+.earlier-career .timeline-item { padding-left: 0; }
+.earlier-career .timeline-dot { display: none; }
+.earlier-degrees { display: grid; gap: 22px; border-top: 1px dashed #d0bca6; padding-top: 22px; margin-top: 22px; }
+.earlier-degrees h3 { font-family: var(--serif); font-size: 19px; color: #745c62; }
+.earlier-degrees article > p:last-child { font-size: 12px; color: #7d6355; margin-top: 7px; }
+.education-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 800px) {
+  .site-nav { gap: 15px; }
+}
+@media (max-width: 580px) {
+  .earlier-career { margin-left: 24px; }
+}
+
+.bootcamp-core { margin-top: 18px; }
