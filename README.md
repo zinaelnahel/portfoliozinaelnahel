@@ -1,7 +1,9 @@
-# Zina El Nahel — Portfolio
+﻿# Zina El Nahel — Portfolio
 
-A React portfolio with projects, skills, and contact details. The project gallery
-opens by default and includes recent AI work alongside earlier web applications.
+A personal React portfolio with projects, QA engineering experience, education,
+and contact details. The design uses warm colours, handwritten accents and Zina's
+portrait. It includes current Ironhack AI Engineering studies, running from
+31 August to 13 November 2026, alongside professional skills from the CV.
 
 ## Featured projects
 
@@ -11,9 +13,17 @@ opens by default and includes recent AI work alongside earlier web applications.
   clustering, and evidence-based review article drafts, with a Streamlit demo.
 - Ten earlier web projects, including PokeFight, Rocket Coder, and Ra Weather App.
 
-Project titles, descriptions, images, and links live in `src/Projects.js`.
+Project titles, descriptions, images, and links live in `src/data/projects.js`.
 Only add a demo URL when its public address is confirmed; otherwise use a source
-code link. Existing demo links are retained from the original portfolio.
+code link. Five selected projects appear first; visitors can expand the full
+gallery or filter by AI engineering and web development. The unavailable Bouquet
+demo was replaced with the verified Heschek Beschek repository; the Hosn Shah
+entry now correctly describes the Arabic-learning website it links to.
+
+Profile details, skills, experience, education, and bootcamp topics live in
+`src/data/profile.js`. The syllabus is a source for coursework topics; the
+portfolio distinguishes project practice from the wider curriculum. The CV PDF
+and private phone number are not included in the site.
 
 ## Run locally
 
@@ -46,9 +56,12 @@ Add the public production URL here once the deployment is confirmed.
 
 ## Files
 
-- `src/Projects.js`: project data and responsive cards.
-- `src/Nav.js`: Projects, Skills, and Contact tabs.
-- `src/Hello.js`: introduction and profile image.
-- `src/App.test.js`: project visibility, source links, and tab navigation tests.
+- `src/App.js`: page sections, filters and accessible navigation.
+- `src/App.css`: responsive visual design, focus states and contrast styles.
+- `src/components/`: project cards, bootcamp learning section and icons.
+- `src/data/`: project destinations and CV-based content.
+- `src/App.test.js`: seven interaction and content checks.
+- `public/images/zina-el-nahel.jpg`: supplied portrait.
 - `public/index.html`: page title and social metadata.
+- `ACCESSIBILITY.md`: completed accessibility checks and their scope.
 - `vercel.json`: hosting configuration.
