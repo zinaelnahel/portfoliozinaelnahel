@@ -39,7 +39,7 @@ export const projects = [
     color: "#e0f1ed",
   },
   {title: "PokeFight", image: pokemon, description: "A Pokémon game built with React, MongoDB, Mongoose, Node.js and Material UI.", demo: "https://blissful-mccarthy-be71d3.netlify.app/"},
-  {title: "Rocket Coder", image: rocketcoder, description: "A web application built with React, MongoDB, Node.js and Material UI.", demo: "https://the-rocket-coder.netlify.app/"},
+  {title: "Rocket Coder", image: rocketcoder, description: "A web application built with React, MongoDB, Node.js and Material UI.", demo: "https://rocketcoder.netlify.app/"},
   {title: "Bouquet Café", image: bouquet, description: "A café website built with JavaScript, HTML and Bootstrap.", demo: "https://bouquet.netlify.app/"},
   {title: "Hacker News", image: hackernews, description: "A news reader built with JavaScript, HTML, CSS and an API.", demo: "https://vigilant-beaver-b8a4d8.netlify.app/"},
   {title: "Ra Weather App", image: weather, description: "A weather app built with React, JavaScript and Bootstrap.", demo: "https://quizzical-knuth-c2fd31.netlify.app/"},
