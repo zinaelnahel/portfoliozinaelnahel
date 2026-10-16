@@ -10,12 +10,13 @@ function ProjectArtwork({project}) {
 
 export default function ProjectCard({project, index}) {
   const primaryUrl = project.demo || project.repository;
-  return <article className={`project-card${project.featured ? ' featured' : ''}`}>
-    <a className="project-main-link" href={primaryUrl} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title}${project.demo ? ' demo' : ' repository'} (opens in a new tab)`}>
-      <div className={`project-image ${project.kind || ''}`}><ProjectArtwork project={project} /><span className="project-image-arrow"><Icon name="external" /></span></div>
+  const Main = primaryUrl ? 'a' : 'div';
+  return <article className={`project-card${project.featured ? ' featured' : ''}${project.kind === 'quality' ? ' case-study' : ''}`}>
+    <Main className="project-main-link" {...(primaryUrl ? {href: primaryUrl, target: '_blank', rel: 'noopener noreferrer', 'aria-label': `Open ${project.title}${project.demo ? ' demo' : ' repository'} (opens in a new tab)`} : {})}>
+      {project.kind !== 'quality' && <div className={`project-image ${project.kind || ''}`}><ProjectArtwork project={project} /><span className="project-image-arrow"><Icon name="external" /></span></div>}
       <div className="project-copy"><div className="project-eyebrow"><span>{project.category}</span><span>{String(index + 1).padStart(2, '0')}</span></div><h3>{project.title}</h3>{project.subtitle && <p className="project-subtitle">{project.subtitle}</p>}<p className="project-description">{project.description}</p>{project.problem && <dl className="project-evidence"><dt>Problem</dt><dd>{project.problem}</dd><dt>Approach</dt><dd>{project.approach}</dd></dl>}<ul className="project-tags" aria-label="Technologies">{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul></div>
-    </a>
-    <div className="project-footer"><a href={primaryUrl} target="_blank" rel="noopener noreferrer" aria-label={`${project.demo ? 'View project' : 'Explore project'}: ${project.title} (opens in a new tab)`}>{project.demo ? 'View project' : 'Explore project'}<Icon name="external" size={16} /></a><a href={project.repository} target="_blank" rel="noopener noreferrer" aria-label={`Code: ${project.title} (opens in a new tab)`}><Icon name="github" size={16} />Code</a></div>
+    </Main>
+    {primaryUrl && <div className="project-footer"><a href={primaryUrl} target="_blank" rel="noopener noreferrer" aria-label={`${project.demo ? 'View project' : 'Explore project'}: ${project.title} (opens in a new tab)`}>{project.demo ? 'View project' : 'Explore project'}<Icon name="external" size={16} /></a>{project.repository && <a href={project.repository} target="_blank" rel="noopener noreferrer" aria-label={`Code: ${project.title} (opens in a new tab)`}><Icon name="github" size={16} />Code</a>}</div>}
     {project.note && <p className="project-note">{project.note}</p>}
   </article>;
 }

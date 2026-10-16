@@ -15,20 +15,24 @@ test('filters the gallery and lets visitors discover every project', () => {
   render(<App />);
   const gallery = document.getElementById('project-gallery');
   expect(within(gallery).getAllByRole('article')).toHaveLength(5);
-  fireEvent.click(screen.getByRole('button', {name: 'Show all 12 projects'}));
-  expect(within(gallery).getAllByRole('article')).toHaveLength(12);
+  fireEvent.click(screen.getByRole('button', {name: 'Show all 10 projects'}));
+  expect(within(gallery).getAllByRole('article')).toHaveLength(10);
   fireEvent.click(screen.getByRole('button', {name: /AI engineering/}));
   expect(within(gallery).getAllByRole('article')).toHaveLength(2);
   expect(screen.getByRole('heading', {name: 'SafarAI'})).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', {name: 'Quality engineering'}));
+  expect(within(gallery).getAllByRole('article')).toHaveLength(3);
+  expect(within(gallery).queryByRole('link')).not.toBeInTheDocument();
+  expect(screen.getByRole('heading', {name: 'Playwright Accessibility Testing Framework'})).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', {name: 'Web development'}));
-  expect(within(gallery).getAllByRole('article')).toHaveLength(10);
+  expect(within(gallery).getAllByRole('article')).toHaveLength(5);
   expect(screen.queryByRole('heading', {name: 'SafarAI'})).not.toBeInTheDocument();
 });
 
 test('every project card opens its own destination and source without nested links', () => {
   render(<App />);
-  fireEvent.click(screen.getByRole('button', {name: 'Show all 12 projects'}));
-  projects.forEach(project => {
+  fireEvent.click(screen.getByRole('button', {name: 'Show all 10 projects'}));
+  projects.filter(project => project.demo || project.repository).forEach(project => {
     const primary = screen.getByRole('link', {name: `Open ${project.title}${project.demo ? ' demo' : ' repository'} (opens in a new tab)`});
     expect(primary).toHaveAttribute('href', project.demo || project.repository);
     expect(primary).toHaveAttribute('target', '_blank');
@@ -36,7 +40,7 @@ test('every project card opens its own destination and source without nested lin
     expect(primary.querySelector('a')).toBeNull();
     expect(screen.getByRole('link', {name: `Code: ${project.title} (opens in a new tab)`})).toHaveAttribute('href', project.repository);
   });
-  expect(screen.getByRole('link', {name: 'Open SafarAI demo (opens in a new tab)'})).toHaveAttribute('href', 'https://ai-travel-advisor-s51s.vercel.app/');
+  expect(screen.getByRole('link', {name: 'Open SafarAI demo (opens in a new tab)'})).toHaveAttribute('href', 'https://ai-travel-advisor-mu.vercel.app/');
   expect(document.querySelector('a[href="https://bouquet.netlify.app/"]')).toBeNull();
 });
 

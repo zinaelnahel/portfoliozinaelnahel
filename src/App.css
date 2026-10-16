@@ -720,3 +720,6 @@ body { overflow-wrap: break-word; }
 }
 
 .bootcamp-core { margin-top: 18px; }
+
+.case-study .project-copy { padding-top: 28px; }
+.case-study .project-note { margin: 4px 23px 22px; font-size: 11px; line-height: 1.5; }
